@@ -6,8 +6,7 @@ class Solution:
                 a.append(i)
         arr1.sort()
         for k in arr1:
-            if k not in a:
-                for x in range(arr1.count(k)):
-                    a.append(k)
+            if k not in arr2:
+                a.append(k)
         return a
         
