@@ -7,11 +7,11 @@ class Solution:
                 n=n//10
             return s
         a=[]
-        for i in range(l,h+1):
-            a.append(su(i))
         d={}
-        for z in a:
-            d[z]=d.get(z,0)+1
+        for i in range(l,h+1):
+            s=su(i)
+            a.append(s)
+            d[s]=d.get(s,0)+1
         return max(d.values())
 
 
